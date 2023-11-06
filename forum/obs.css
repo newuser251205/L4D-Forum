@@ -5,6 +5,20 @@ body {
     background-size: cover;
     overflow-x: hidden;
 }
+
+body::after {
+    background-image: url(l4d_bg.png);
+    background-size: cover;
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 33%;
+    z-index: -2;
+    background-repeat: no-repeat;
+}
 .container {
     z-index: -1;
     color: white;
@@ -18,7 +32,6 @@ body {
     padding-right: -200px;
 }
 .header {
-    top: -10px;
     align-items: center;
     background-color: rgba(0, 0, 1, 0.9);
     width: 100%;
