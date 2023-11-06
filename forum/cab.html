@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="ico.png">
+    <link rel="stylesheet" href="index.css">
+    <title>Личный кабинет</title>
+</head>
+<body>
+    <div class="header"> 
+        <a href="index.html"> <img class="logo" src="logo.png" width="240px" height="100px"> </a>
+        <ul class="p1"> <a href="index.html#lore"> Сюжет </a> </ul>
+        <ul class="p2"> <a href="index.html#pers"> Персонажи </a> </ul>
+        <ul class="p3"> <a href="obs.html"> Обсуждения </a> </ul>
+        <ul class="p4"> <a href="cab.html"> Кабинет </a> </ul>
+    </div>
+
+    <div class="cabinet"> <font color="white">
+        <h1> <font color="red"> Личный кабинет </font> </h1>
+        <div class="profile">
+            <div class="profile-picture">
+                <img src="pfp.png" alt="Фото профиля">
+            </div>
+            <div class="profile-info">
+
+                <p> <font color="red"> Никнейм: </font> Erkin </p>
+                <p> <font color="red"> SteamID: </font>76561199477465768 </p>
+
+            </div>
+        </div>
+        
+        <div class="foot">
+            <button class="b1"> Настройки профиля </button>
+            <button class="b2"> Выйти из аккаунта </button>
+        </div>
+        
+
+    </div> </font>
+
+</body>
+
+</html>
+
+<style>
+
+body::after {
+    background-image: url(l4d_BG.jpg);
+    background-size: cover;
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 30%;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+
+.cabinet {
+    padding-top: 220px;
+    text-align: center;
+}
+
+.cabinet h1 {
+    font-size: 28px;
+}
+
+.profile {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture {
+    margin-right: 20px;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: dotted red;
+    border-width: 2px;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.profile-info p {
+    font-size: 16px;
+    margin: 5px;
+}
+
+.foot {
+    padding: 2%;
+    margin-top: 250px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: white;
+}
+
+.foot .b1 {
+    cursor: pointer;
+    padding: 1%;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+.foot .b1:hover {
+    transform: scale(.95);
+    transition: .1s;
+}
+
+.foot .b2 {
+    margin-left: 10%;
+    cursor: pointer;
+    padding: 1%;
+    background-color: rgb(107, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+.foot .b2:hover {
+    transform: scale(.95);
+    transition: .1s;
+}
+
+</style>
